@@ -14,6 +14,7 @@
 		07A241FF1EDD113E00567863 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A241FD1EDD113E00567863 /* LaunchScreen.storyboard */; };
 		07A2420A1EDD113E00567863 /* HomepwnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A242091EDD113E00567863 /* HomepwnerTests.swift */; };
 		07A242151EDD113E00567863 /* HomepwnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A242141EDD113E00567863 /* HomepwnerUITests.swift */; };
+		07A242231EE828AB00567863 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A242221EE828AB00567863 /* ItemsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		07A242101EDD113E00567863 /* HomepwnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomepwnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A242141EDD113E00567863 /* HomepwnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepwnerUITests.swift; sourceTree = "<group>"; };
 		07A242161EDD113E00567863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A242221EE828AB00567863 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsViewController.swift; path = ../ItemsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		07A241F31EDD113E00567863 /* Homepwner */ = {
 			isa = PBXGroup;
 			children = (
+				07A242221EE828AB00567863 /* ItemsViewController.swift */,
 				07A241F41EDD113E00567863 /* AppDelegate.swift */,
 				07A241F61EDD113E00567863 /* ViewController.swift */,
 				07A241F81EDD113E00567863 /* Main.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07A241F71EDD113E00567863 /* ViewController.swift in Sources */,
+				07A242231EE828AB00567863 /* ItemsViewController.swift in Sources */,
 				07A241F51EDD113E00567863 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
