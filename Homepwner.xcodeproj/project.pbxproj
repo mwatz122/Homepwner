@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071D670F1EF00E61009AAAFF /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D670E1EF00E61009AAAFF /* ItemStore.swift */; };
 		07669F7D1EEE3E080084D006 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07669F7C1EEE3E080084D006 /* Item.swift */; };
 		07A241F51EDD113E00567863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A241F41EDD113E00567863 /* AppDelegate.swift */; };
 		07A241FA1EDD113E00567863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A241F81EDD113E00567863 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071D670E1EF00E61009AAAFF /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemStore.swift; path = ../ItemStore.swift; sourceTree = "<group>"; };
 		07669F7C1EEE3E080084D006 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../Item.swift; sourceTree = "<group>"; };
 		07A241F11EDD113E00567863 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A241F41EDD113E00567863 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				07A242221EE828AB00567863 /* ItemsViewController.swift */,
 				07669F7C1EEE3E080084D006 /* Item.swift */,
+				071D670E1EF00E61009AAAFF /* ItemStore.swift */,
 				07A241F41EDD113E00567863 /* AppDelegate.swift */,
 				07A241F81EDD113E00567863 /* Main.storyboard */,
 				07A241FB1EDD113E00567863 /* Assets.xcassets */,
@@ -267,6 +270,7 @@
 			files = (
 				07A242231EE828AB00567863 /* ItemsViewController.swift in Sources */,
 				07669F7D1EEE3E080084D006 /* Item.swift in Sources */,
+				071D670F1EF00E61009AAAFF /* ItemStore.swift in Sources */,
 				07A241F51EDD113E00567863 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
