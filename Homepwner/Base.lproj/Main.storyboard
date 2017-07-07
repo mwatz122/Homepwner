@@ -83,6 +83,11 @@
                                         <constraint firstItem="4o2-yH-9fn" firstAttribute="centerY" secondItem="4OV-kU-szu" secondAttribute="centerY" id="gcT-BB-eKS"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="Wqj-h1-Xxi" id="faP-Lj-G4H"/>
+                                    <outlet property="serialNumberLabel" destination="pDV-eI-Jim" id="NFH-Va-TTX"/>
+                                    <outlet property="valueLabel" destination="4o2-yH-9fn" id="QBq-oP-KDV"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
