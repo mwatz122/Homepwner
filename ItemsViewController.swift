@@ -11,6 +11,12 @@ import UIKit
 class ItemsViewController: UITableViewController {
     var itemStore: ItemStore!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        navigationItem.leftBarButtonItem = editButtonItem
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -82,7 +88,7 @@ class ItemsViewController: UITableViewController {
         itemStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row)
     }
     
-    @IBAction func addNewItem(_ sender: UIButton)
+    @IBAction func addNewItem(_ sender: UIBarButtonItem)
     {
         // Create a new item and add it to the store
         let newItem = itemStore.createItem()

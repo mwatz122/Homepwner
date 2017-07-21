@@ -52,7 +52,7 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NPD-3M-EhI" id="4OV-kU-szu">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqj-h1-Xxi">
@@ -97,7 +97,15 @@
                             <outlet property="delegate" destination="nja-Ha-N38" id="mp2-Sj-p6E"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Homepwner" id="SUW-HA-BKj"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Homepwner" id="SUW-HA-BKj">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="tUQ-Qr-SZb">
+                            <connections>
+                                <action selector="addNewItem:" destination="nja-Ha-N38" id="fXU-M2-UxU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jmF-Z5-XSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
