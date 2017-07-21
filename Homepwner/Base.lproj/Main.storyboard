@@ -18,38 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="HGh-xc-WD9">
-                            <rect key="frame" x="0.0" y="64" width="375" height="60"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMg-NY-uRv">
-                                    <rect key="frame" x="8" y="15" width="175.5" height="30"/>
-                                    <state key="normal" title="Edit"/>
-                                    <connections>
-                                        <action selector="toggleEditingMode:" destination="nja-Ha-N38" eventType="touchUpInside" id="0Z1-MF-Eda"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJk-GV-TOh">
-                                    <rect key="frame" x="191.5" y="15" width="175.5" height="30"/>
-                                    <state key="normal" title="Add"/>
-                                    <connections>
-                                        <action selector="addNewItem:" destination="nja-Ha-N38" eventType="touchUpInside" id="zoT-pT-iu5"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstItem="CMg-NY-uRv" firstAttribute="leading" secondItem="HGh-xc-WD9" secondAttribute="leading" constant="8" id="0P3-mJ-PFC"/>
-                                <constraint firstItem="CMg-NY-uRv" firstAttribute="centerY" secondItem="HGh-xc-WD9" secondAttribute="centerY" id="LFP-jK-3nC"/>
-                                <constraint firstItem="ZJk-GV-TOh" firstAttribute="width" secondItem="CMg-NY-uRv" secondAttribute="width" id="Sdb-cz-QB2"/>
-                                <constraint firstItem="ZJk-GV-TOh" firstAttribute="leading" secondItem="CMg-NY-uRv" secondAttribute="trailing" constant="8" id="ao8-yr-vCZ"/>
-                                <constraint firstItem="ZJk-GV-TOh" firstAttribute="centerY" secondItem="HGh-xc-WD9" secondAttribute="centerY" id="hCm-eU-Amf"/>
-                                <constraint firstAttribute="trailing" secondItem="ZJk-GV-TOh" secondAttribute="trailing" constant="8" id="nw3-tl-T6g"/>
-                            </constraints>
-                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="65" id="NPD-3M-EhI" customClass="ItemCell" customModule="Homepwner" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88" width="375" height="65"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NPD-3M-EhI" id="4OV-kU-szu">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
@@ -124,7 +95,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VsS-5P-tqk">
-                                <rect key="frame" x="16" y="56" width="343" height="603"/>
+                                <rect key="frame" x="16" y="64" width="343" height="551"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9Gv-cP-iyu">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -151,6 +122,9 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B76-JC-x53">
                                                 <rect key="frame" x="0.0" y="0.0" width="47" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="47" id="lL4-C6-Y62"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -171,6 +145,9 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPi-mm-fgH">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="45" id="JFd-RJ-yl4"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -187,25 +164,21 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8V-QO-5sm">
-                                        <rect key="frame" x="0.0" y="114" width="343" height="489"/>
+                                        <rect key="frame" x="0.0" y="114" width="343" height="437"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="HRn-el-Lq4" firstAttribute="leading" secondItem="nfb-Xe-eps" secondAttribute="leading" id="06r-tv-29M"/>
-                                    <constraint firstItem="nfb-Xe-eps" firstAttribute="leading" secondItem="7PF-2b-eyo" secondAttribute="leading" id="dGP-3q-nft"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="5Js-jN-eU1" firstAttribute="bottom" secondItem="VsS-5P-tqk" secondAttribute="top" constant="8" id="7lQ-k7-LHq" userLabel="Top Layout Guide.bottom = Stack View.top + 8"/>
-                            <constraint firstItem="VsS-5P-tqk" firstAttribute="leading" secondItem="IYa-f1-rfj" secondAttribute="leadingMargin" id="SLY-0Z-Kff"/>
-                            <constraint firstItem="XOf-W3-KUD" firstAttribute="top" secondItem="VsS-5P-tqk" secondAttribute="bottom" constant="8" id="V0f-x1-Rca"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="VsS-5P-tqk" secondAttribute="trailing" id="e4w-Nf-MoN"/>
+                            <constraint firstItem="VsS-5P-tqk" firstAttribute="leading" secondItem="IYa-f1-rfj" secondAttribute="leadingMargin" id="P4L-0c-OJ9"/>
+                            <constraint firstItem="VsS-5P-tqk" firstAttribute="trailing" secondItem="IYa-f1-rfj" secondAttribute="trailingMargin" id="T3G-ku-ilU"/>
+                            <constraint firstItem="XOf-W3-KUD" firstAttribute="top" secondItem="VsS-5P-tqk" secondAttribute="bottom" constant="8" symbolic="YES" id="XfQ-Cs-Ea3"/>
+                            <constraint firstItem="VsS-5P-tqk" firstAttribute="top" secondItem="5Js-jN-eU1" secondAttribute="bottom" id="jJu-Zf-3UG"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="6fY-bw-iGq" appends="YES" id="hvu-1b-e67"/>
