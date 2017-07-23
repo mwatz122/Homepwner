@@ -15,6 +15,18 @@ class DetailViewController : UIViewController, UITextFieldDelegate
     @IBOutlet var valueField: UITextField!
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
+    @IBAction func takePicture(_ sender: UIBarButtonItem) {
+        let imagePicker = UIImagePickerController()
+        
+        // If the device has a camera, take a picture; otherwise,
+        // just pick from photo library
+        if (UIImagePickerController.isSourceTypeAvailable(.camera)) {
+            imagePicker.sourceType = .camera
+        }
+        else {
+            imagePicker.sourceType = .photoLibrary
+        }
+    }
     
     var item: Item! {
         didSet {

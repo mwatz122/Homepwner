@@ -180,7 +180,11 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="gN0-oz-GDH"/>
                                         </constraints>
                                         <items>
-                                            <barButtonItem systemItem="camera" id="wlh-Tr-ePP"/>
+                                            <barButtonItem systemItem="camera" id="wlh-Tr-ePP">
+                                                <connections>
+                                                    <action selector="takePicture:" destination="GOD-jc-vjI" id="U3x-30-nLX"/>
+                                                </connections>
+                                            </barButtonItem>
                                         </items>
                                     </toolbar>
                                 </subviews>
