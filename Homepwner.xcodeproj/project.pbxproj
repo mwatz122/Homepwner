@@ -18,6 +18,7 @@
 		07A2420A1EDD113E00567863 /* HomepwnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A242091EDD113E00567863 /* HomepwnerTests.swift */; };
 		07A242151EDD113E00567863 /* HomepwnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A242141EDD113E00567863 /* HomepwnerUITests.swift */; };
 		07A242231EE828AB00567863 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A242221EE828AB00567863 /* ItemsViewController.swift */; };
+		07A8752F1F259F69006FC0AB /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A8752E1F259F69006FC0AB /* ImageStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		07A242141EDD113E00567863 /* HomepwnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepwnerUITests.swift; sourceTree = "<group>"; };
 		07A242161EDD113E00567863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07A242221EE828AB00567863 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsViewController.swift; path = ../ItemsViewController.swift; sourceTree = "<group>"; };
+		07A8752E1F259F69006FC0AB /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				07A242221EE828AB00567863 /* ItemsViewController.swift */,
+				07A8752E1F259F69006FC0AB /* ImageStore.swift */,
 				071320621F0D1D8600F11377 /* ItemCell.swift */,
 				07669F7C1EEE3E080084D006 /* Item.swift */,
 				071D670E1EF00E61009AAAFF /* ItemStore.swift */,
@@ -279,6 +282,7 @@
 				071D670F1EF00E61009AAAFF /* ItemStore.swift in Sources */,
 				071320651F1A9F2B00F11377 /* DetailViewController.swift in Sources */,
 				07A241F51EDD113E00567863 /* AppDelegate.swift in Sources */,
+				07A8752F1F259F69006FC0AB /* ImageStore.swift in Sources */,
 				071320631F0D1D8600F11377 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
