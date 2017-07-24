@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController : UIViewController, UITextFieldDelegate
+class DetailViewController : UIViewController, UITextFieldDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate
 {
     @IBOutlet var nameField: UITextField!
     @IBOutlet var serialNumberField: UITextField!
@@ -26,6 +26,11 @@ class DetailViewController : UIViewController, UITextFieldDelegate
         else {
             imagePicker.sourceType = .photoLibrary
         }
+        
+        imagePicker.delegate = self
+        
+        // Place the image picker on the screen
+        present(imagePicker, animated: true, completion: nil)
     }
     
     var item: Item! {
@@ -83,5 +88,18 @@ class DetailViewController : UIViewController, UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
+        
+        // Get picked image from info dictionary
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        // Put that image on the screen in the image view
+        imageView.image = image
+        
+        // Take image picker off the screen -
+        // you must call this dismiss method
+        dismiss(animated: true, completion: nil)
     }
 }
