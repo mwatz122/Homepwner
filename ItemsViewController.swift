@@ -11,6 +11,7 @@ import UIKit
 class ItemsViewController: UITableViewController {
     var itemStore: ItemStore!
     
+    // Constructor
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
