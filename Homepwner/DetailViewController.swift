@@ -38,6 +38,7 @@ class DetailViewController : UIViewController, UITextFieldDelegate, UINavigation
             navigationItem.title = item.name
         }
     }
+    var imageStore: ImageStore!
     
     @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
