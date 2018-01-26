@@ -71,7 +71,7 @@ class DetailViewController : UIViewController, UITextFieldDelegate, UINavigation
         let key = item.itemKey
         
         // If there is an associated image with the item
-        // Display it on the image view---
+        // Display it on the image view-
         let imageToDisplay = imageStore.image(forKey: key)
         imageView.image = imageToDisplay
     }
